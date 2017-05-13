@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="sfdroid" fetch="https://github.com/sfdroid"/>
+
+  <remove-project name="platform/external/boringssl"/>
+  <project path="external/boringssl" name="android_external_boringssl" revision="anbox" remote="sfdroid"/>
+
+  <remove-project name="platform_hardware_libhardware"/>
+  <project path="hardware/libhardware" name="android_hardware_libhardware" revision="anbox" remote="sfdroid"/>
+
+  <remove-project name="platform_frameworks_base"/>
+  <project path="frameworks/base" name="android_frameworks_base" revision="anbox" remote="sfdroid"/>
+
+  <remove-project name="platform_frameworks_native"/>
+  <project path="frameworks/native" name="android_frameworks_native" revision="anbox" remote="sfdroid"/>
+
+  <project path="rpm" name="anbox_image_packaging" revision="anbox" remote="sfdroid"/>
+</manifest>
