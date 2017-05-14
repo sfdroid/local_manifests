@@ -15,4 +15,7 @@
   <project path="frameworks/native" name="android_frameworks_native" revision="anbox" remote="sfdroid"/>
 
   <project path="rpm" name="anbox_image_packaging" revision="anbox" remote="sfdroid"/>
+
+  <remove-project name="anbox"/>
+  <project path="anbox" name="anbox" remote="sfdroid" revision="anbox"/>
 </manifest>
