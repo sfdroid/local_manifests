@@ -14,6 +14,9 @@
   <remove-project name="platform_frameworks_native"/>
   <project path="frameworks/native" name="android_frameworks_native" revision="anbox" remote="sfdroid"/>
 
+  <project path="external/wayland" name="android_external_wayland" revision="anbox" remote="sfdroid"/>
+  <project path="external/libffi" name="android_external_libffi" revision="anbox" remote="sfdroid"/>
+
   <project path="rpm" name="anbox_image_packaging" revision="anbox" remote="sfdroid"/>
 
   <remove-project name="anbox"/>
