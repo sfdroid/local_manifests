@@ -2,9 +2,6 @@
 <manifest>
   <remote name="sfdroid" fetch="https://github.com/sfdroid"/>
 
-  <remove-project name="platform/external/boringssl"/>
-  <project path="external/boringssl" name="android_external_boringssl" revision="anbox" remote="sfdroid"/>
-
   <remove-project name="platform_hardware_libhardware"/>
   <project path="hardware/libhardware" name="android_hardware_libhardware" revision="anbox" remote="sfdroid"/>
 
@@ -18,6 +15,9 @@
   <project path="external/libffi" name="android_external_libffi" revision="anbox" remote="sfdroid"/>
 
   <project path="rpm" name="anbox_image_packaging" revision="anbox" remote="sfdroid"/>
+
+  <remove-project name="device_anbox">
+  <project path="device/anbox" name="device_anbox" revision="anbox" remote="sfdroid"/>
 
   <remove-project name="anbox"/>
   <project path="anbox" name="anbox" remote="sfdroid" revision="anbox"/>
